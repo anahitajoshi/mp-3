@@ -111,6 +111,7 @@ const StyledTable = styled.table`
 
   @media screen and (max-width: 750px) {
     margin: -0.5% -12%;
+    margin-bottom: 5%;
   }
 
 `;
@@ -160,11 +161,11 @@ export default function Achievements() {
                   </StyledTd>
                 </StyledTr>
               </StyledTable>
-
               <StyledP>
                 These are my achievements from high school at Naperville Central High School and from university at Boston
                 University.
               </StyledP>
+
 
 
             </StyledTextContents>

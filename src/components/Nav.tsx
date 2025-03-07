@@ -69,13 +69,13 @@ export default function Nav() {
   return (
     <StyledNav>
       <StyledUl>
-        <StyledLi><StyledLink to={"/"}>Resume</StyledLink></StyledLi>
-        <StyledLi><StyledLink to={"/education"}>Education</StyledLink></StyledLi>
-        <StyledLi><StyledLink to={"/experience"}>Experience</StyledLink></StyledLi>
-        <StyledLi><StyledLink to={"/achievements"}>Achievements</StyledLink></StyledLi>
-        <StyledLi><StyledLink to={"/references"}>References</StyledLink></StyledLi>
-        <StyledLi><StyledLink to={"/skills"}>Skills</StyledLink></StyledLi>
-        <StyledLi><StyledLink to={"/projects"}>Projects</StyledLink></StyledLi>
+        <StyledLi><StyledLink to={`/`}>Resume</StyledLink></StyledLi>
+        <StyledLi><StyledLink to={`/education`}>Education</StyledLink></StyledLi>
+        <StyledLi><StyledLink to={`/experience`}>Experience</StyledLink></StyledLi>
+        <StyledLi><StyledLink to={`/achievements`}>Achievements</StyledLink></StyledLi>
+        <StyledLi><StyledLink to={`/references`}>References</StyledLink></StyledLi>
+        <StyledLi><StyledLink to={`/skills`}>Skills</StyledLink></StyledLi>
+        <StyledLi><StyledLink to={`/projects`}>Projects</StyledLink></StyledLi>
       </StyledUl>
     </StyledNav>
   );
