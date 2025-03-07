@@ -1,16 +1,6 @@
 import { styled } from "styled-components";
 import { useState } from "react";
-import { StyledMain, StyledH3, StyledContents, StyledTextContents } from "../../ui-components/StyledComponents";
-
-
-const StyledH4 = styled.h4`
-  margin: 1.5vw 0;
-  text-align: center;
-  font-size: calc(1.5px + 1.5vw);
-  color: white;
-`;
-
-// calculator styled components
+import { StyledMain, StyledH3, StyledContents, StyledTextContents, StyledH4 } from "../../ui-components/StyledComponents";
 
 const StyledCalculator = styled.div`
   max-width: 350px;

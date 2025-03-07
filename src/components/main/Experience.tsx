@@ -1,16 +1,8 @@
-import { styled } from "styled-components";
 import Header from "../Header";
 import Nav from "../Nav";
 import Footer from "../Footer";
-import { StyledWrapper, StyledContainer, StyledMain, StyledH3, StyledContents, StyledTextContents, StyledP } from "../ui-components/StyledComponents";
+import { StyledWrapper, StyledContainer, StyledMain, StyledH3, StyledContents, StyledTextContents, StyledP, StyledH4 } from "../ui-components/StyledComponents";
 
-
-const StyledH4 = styled.h4`
-  margin: 1.5vw 0;
-  text-align: center;
-  font-size: calc(1.5px + 1.5vw);
-  color: white;
-`;
 
 export default function Experience() {
   return (
