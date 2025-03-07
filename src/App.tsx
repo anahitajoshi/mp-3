@@ -1,11 +1,11 @@
-import { createBrowserRouter, Route, RouterProvider, Routes } from "react-router";
-import Resume from "./components/main/Resume.tsx";
-import Education from "./components/main/Education.tsx";
-import Experience from "./components/main/Experience.tsx";
-import Achievements from "./components/main/Achievements.tsx";
-import References from "./components/main/References.tsx";
-import Skills from "./components/main/Skills.tsx";
-import Projects from "./components/main/calculator/Projects.tsx";
+import { createBrowserRouter, RouterProvider, Route, Routes } from "react-router";
+import Resume from "./components/main/Resume";
+import Education from "./components/main/Education";
+import Experience from "./components/main/Experience";
+import Achievements from "./components/main/Achievements";
+import References from "./components/main/References";
+import Skills from "./components/main/Skills";
+import Projects from "./components/main/calculator/Projects";
 
 
 function Root() {
