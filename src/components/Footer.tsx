@@ -19,7 +19,6 @@ const StyledP = styled.p`
 const StyledLink = styled(Link)`
   color: white;
   text-decoration: none;
-  font-size: calc(16px + 1vw);
   text-align: center;
 
   @media screen and (max-width: 750px) {
