@@ -12,13 +12,13 @@ function Root() {
   return (
     <>
       <Routes>
-        <Route path="/" element={<Resume />} />
-        <Route path="/education" element={<Education />} />
-        <Route path="/experience" element={<Experience />} />
-        <Route path="/achievements" element={<Achievements />} />
-        <Route path="/references" element={<References />} />
-        <Route path="/skills" element={<Skills />} />
-        <Route path="/projects" element={<Projects />} />
+        <Route path={'/'} element={<Resume />} />
+        <Route path={`/education`} element={<Education />} />
+        <Route path={`/experience`} element={<Experience />} />
+        <Route path={`/achievements`} element={<Achievements />} />
+        <Route path={`/references`} element={<References />} />
+        <Route path={`/skills`} element={<Skills />} />
+        <Route path={`/projects`} element={<Projects />} />
       </Routes>
     </>
   )
