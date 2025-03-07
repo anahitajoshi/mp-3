@@ -17,7 +17,7 @@ const StyledP = styled.p`
 `;
 
 const StyledLink = styled(Link)`
-  color: black;
+  color: white;
   text-decoration: none;
   font-size: calc(16px + 1vw);
   text-align: center;
