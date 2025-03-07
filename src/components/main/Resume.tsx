@@ -1,7 +1,7 @@
 import { styled } from "styled-components";
-import Header from "./Header";
-import Nav from "./Nav";
-import Footer from "./Footer";
+import Header from "../Header";
+import Nav from "../Nav";
+import Footer from "../Footer";
 
 const StyledWrapper = styled.div`
   width: 80vw;
@@ -76,6 +76,36 @@ const StyledContents = styled.div`
   }
 `;
 
+const StyledImages = styled.div`
+  max-width: 40%;
+  margin: 1vh 1vw;
+
+  @media screen and (max-width: 750px) {
+    width: 40%;
+    margin: 1vh auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+`;
+
+
+const StyledProfilePic = styled.img`
+  max-width: 100%;
+  display: block;
+  margin: 0 auto;
+  border-radius: 50px;
+
+  @media screen and (max-width: 750px) {
+    max-width: 100%;
+    display: block;
+    margin: 0 auto;
+    border-radius: 50px;
+  }
+
+
+`;
 
 const StyledTextContents = styled.div`
   align-self: center;
@@ -101,46 +131,34 @@ const StyledP = styled.p`
   }
 `;
 
-const StyledH4 = styled.h4`
-  margin: 1.5vw 0;
-  text-align: center;
-  font-size: calc(1.5px + 1.5vw);
-  color: white;
-`;
 
-export default function Experience() {
+export default function Resume() {
   return (
     <StyledWrapper>
 
       <Header />
       <StyledContainer>
-
         <Nav />
+
         <StyledMain>
 
-          <StyledH3>Experience</StyledH3>
+          <StyledH3>Homepage</StyledH3>
 
           <StyledContents>
 
+            <StyledImages>
+              <StyledProfilePic src="/profile.jpg" alt="Profile picture of Anahita Joshi" />
+            </StyledImages>
+
             <StyledTextContents>
-              <StyledH4>Software Engineering, R&D, Product Management Intern</StyledH4>
-              <StyledP>Boardwalktech, Inc. | June 2024 - Present</StyledP>
-              <StyledP>Spearheaded the improvement of search algorithms using data attribute chaining & delta analysis to
-                enhance
-                document intelligence & improve performance across large supply chain datasets.</StyledP>
+              <StyledP>
+                Hi, my name is Anahita Joshi. I am currently a senior at Boston University graduating in May 2025.
+                I'm majoring in Computer Science with a minor in Business Administration and Finance. In my free time, I
+                love to take dance classes and read. Feel free to reach out!
+                This is my online resume where you can see my education history, employment, and more.
+              </StyledP>
 
-              <StyledH4>Accounts Payable & Procure to Pay Office Assistant</StyledH4>
-              <StyledP>Boston University | February 2024 - Present</StyledP>
-
-              <StyledH4>Resident Assistant</StyledH4>
-              <StyledP>Boston University | May 2023 - August 2024</StyledP>
-              <StyledP>Fostered an inclusive environment for 1800+ students transitioning into college life, emphasizing
-                community
-                development through event programming while acting as primary liaison & utilizing conflict-mediation &
-                crisis
-                intervention skills through 24-hour on-call support.</StyledP>
             </StyledTextContents>
-
 
           </StyledContents>
         </StyledMain>

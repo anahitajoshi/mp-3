@@ -1,8 +1,7 @@
 import { styled } from "styled-components";
-import Header from "./Header";
-import Nav from "./Nav";
-import Footer from "./Footer";
-
+import Header from "../Header";
+import Nav from "../Nav";
+import Footer from "../Footer";
 
 const StyledWrapper = styled.div`
   width: 80vw;
@@ -109,40 +108,39 @@ const StyledH4 = styled.h4`
   color: white;
 `;
 
-
-export default function Education() {
+export default function Skills() {
   return (
     <StyledWrapper>
-
       <Header />
-
       <StyledContainer>
-
         <Nav />
 
         <StyledMain>
 
-          <StyledH3>Education</StyledH3>
+          <StyledH3>Skills</StyledH3>
 
           <StyledContents>
 
 
             <StyledTextContents>
-              <StyledH4>Boston University</StyledH4>
-              <StyledP>Boston, Massachusetts | January 2022 - May 2025</StyledP>
-              <StyledP><strong>BA in Computer Science</strong>; Minor in Business Administration & Management</StyledP>
-              <StyledP><strong>Dean’s List</strong></StyledP>
+              <StyledH4>Skills</StyledH4>
+              <StyledP><strong>Programming Languages:</strong> Python, Java, SQL, OCaml, Assembly, ShellScript</StyledP>
+              <StyledP><strong>Web Development:</strong> ReactJS, HTML, CSS</StyledP>
+              <StyledP><strong>Software Tools:</strong> Git, Microsoft Excel, PowerPoint, Word, OnBase</StyledP>
+              <StyledP><strong>Technical Expertise:</strong> SLDC, OOP, Functional Programming, Algorithm & Graph Design,
+                Database Management</StyledP>
 
-              <StyledH4>Principal Courses:</StyledH4>
-              <StyledP>Software Engineering, Database Systems, Information Security, Data Science Applications, Accounting,
-                Business Law, Analysis of Algorithms, Probability in Computing, Statistical Decision-Making for
-                Management,
-                Computer Systems, Microeconomics, Macroeconomics</StyledP>
+              <StyledH4>Project Skills</StyledH4>
+              <StyledP><strong>Ripple Search Project:</strong> Java-based search engine creating SQL queries utilizing Natural
+                Language Processing (NLP)</StyledP>
+
             </StyledTextContents>
 
           </StyledContents>
         </StyledMain>
+
       </StyledContainer>
+
 
       <Footer />
     </StyledWrapper>

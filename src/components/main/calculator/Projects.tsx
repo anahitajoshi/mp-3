@@ -1,7 +1,7 @@
 import { styled } from "styled-components";
-import Header from "./Header";
-import Nav from "./Nav";
-import Footer from "./Footer";
+import Header from "../../Header";
+import Nav from "../../Nav";
+import Footer from "../../Footer";
 import Calculator from "./Calculator";
 
 const StyledWrapper = styled.div`

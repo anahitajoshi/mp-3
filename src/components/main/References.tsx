@@ -1,7 +1,7 @@
 import { styled } from "styled-components";
-import Header from "./Header";
-import Nav from "./Nav";
-import Footer from "./Footer";
+import Header from "../Header";
+import Nav from "../Nav";
+import Footer from "../Footer";
 
 const StyledWrapper = styled.div`
   width: 80vw;
@@ -90,15 +90,33 @@ const StyledTextContents = styled.div`
 
 `;
 
-const StyledP = styled.p`
-  margin: 3vh auto;
-  max-width: 90%;
+
+
+const StyledTable = styled.table`
+  border: 1px solid white;
+  text-align: center;
+  table-layout: fixed;
   font-size: calc(1.5px + 1.5vw);
 
   @media screen and (max-width: 750px) {
-    margin: 2% 2%;
-    font-size: calc(1.5px + 1.5vw);
+    margin: -0.5% -12%;
   }
+`;
+
+
+const StyledTr = styled.tr`
+`;
+
+const StyledTh = styled.th`
+  padding: 15px;
+  width: 33.33%;
+  word-wrap: break-word;
+`;
+
+const StyledTd = styled.td`
+  padding: 15px;
+  width: 33.33%;
+  word-wrap: break-word;
 `;
 
 const StyledH4 = styled.h4`
@@ -108,7 +126,7 @@ const StyledH4 = styled.h4`
   color: white;
 `;
 
-export default function Skills() {
+export default function References() {
   return (
     <StyledWrapper>
       <Header />
@@ -117,22 +135,48 @@ export default function Skills() {
 
         <StyledMain>
 
-          <StyledH3>Skills</StyledH3>
+          <StyledH3>References</StyledH3>
 
           <StyledContents>
 
-
             <StyledTextContents>
-              <StyledH4>Skills</StyledH4>
-              <StyledP><strong>Programming Languages:</strong> Python, Java, SQL, OCaml, Assembly, ShellScript</StyledP>
-              <StyledP><strong>Web Development:</strong> ReactJS, HTML, CSS</StyledP>
-              <StyledP><strong>Software Tools:</strong> Git, Microsoft Excel, PowerPoint, Word, OnBase</StyledP>
-              <StyledP><strong>Technical Expertise:</strong> SLDC, OOP, Functional Programming, Algorithm & Graph Design,
-                Database Management</StyledP>
+              <StyledH4>Professional Contacts</StyledH4>
+              <StyledTable>
+                <StyledTr>
+                  <StyledTh>Name</StyledTh>
+                  <StyledTh>Role</StyledTh>
+                  <StyledTh>Contact</StyledTh>
+                </StyledTr>
+                <StyledTr>
+                  <StyledTd>Rohit Krishnan</StyledTd>
+                  <StyledTd>Internship Mentor</StyledTd>
+                  <StyledTd>boardwalktech.com</StyledTd>
+                </StyledTr>
+                <StyledTr>
+                  <StyledTd>Olivia Clachar</StyledTd>
+                  <StyledTd>Boss</StyledTd>
+                  <StyledTd>oclachar@bu.edu</StyledTd>
+                </StyledTr>
+              </StyledTable>
 
-              <StyledH4>Project Skills</StyledH4>
-              <StyledP><strong>Ripple Search Project:</strong> Java-based search engine creating SQL queries utilizing Natural
-                Language Processing (NLP)</StyledP>
+              <StyledH4>Personal Contacts</StyledH4>
+              <StyledTable>
+                <StyledTr>
+                  <StyledTh>Name</StyledTh>
+                  <StyledTh>Relation</StyledTh>
+                  <StyledTh>Contact</StyledTh>
+                </StyledTr>
+                <StyledTr>
+                  <StyledTd>Prasad Joshi</StyledTd>
+                  <StyledTd>Father</StyledTd>
+                  <StyledTd>630-886-0830</StyledTd>
+                </StyledTr>
+                <StyledTr>
+                  <StyledTd>Mithila Joshi</StyledTd>
+                  <StyledTd>Mother</StyledTd>
+                  <StyledTd>630-956-2625</StyledTd>
+                </StyledTr>
+              </StyledTable>
 
             </StyledTextContents>
 

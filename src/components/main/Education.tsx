@@ -1,7 +1,8 @@
 import { styled } from "styled-components";
-import Header from "./Header";
-import Nav from "./Nav";
-import Footer from "./Footer";
+import Header from "../Header";
+import Nav from "../Nav";
+import Footer from "../Footer";
+
 
 const StyledWrapper = styled.div`
   width: 80vw;
@@ -90,33 +91,15 @@ const StyledTextContents = styled.div`
 
 `;
 
-
-
-const StyledTable = styled.table`
-  border: 1px solid white;
-  text-align: center;
-  table-layout: fixed;
+const StyledP = styled.p`
+  margin: 3vh auto;
+  max-width: 90%;
   font-size: calc(1.5px + 1.5vw);
 
   @media screen and (max-width: 750px) {
-    margin: -0.5% -12%;
+    margin: 2% 2%;
+    font-size: calc(1.5px + 1.5vw);
   }
-`;
-
-
-const StyledTr = styled.tr`
-`;
-
-const StyledTh = styled.th`
-  padding: 15px;
-  width: 33.33%;
-  word-wrap: break-word;
-`;
-
-const StyledTd = styled.td`
-  padding: 15px;
-  width: 33.33%;
-  word-wrap: break-word;
 `;
 
 const StyledH4 = styled.h4`
@@ -126,65 +109,40 @@ const StyledH4 = styled.h4`
   color: white;
 `;
 
-export default function References() {
+
+export default function Education() {
   return (
     <StyledWrapper>
+
       <Header />
+
       <StyledContainer>
+
         <Nav />
 
         <StyledMain>
 
-          <StyledH3>References</StyledH3>
+          <StyledH3>Education</StyledH3>
 
           <StyledContents>
 
+
             <StyledTextContents>
-              <StyledH4>Professional Contacts</StyledH4>
-              <StyledTable>
-                <StyledTr>
-                  <StyledTh>Name</StyledTh>
-                  <StyledTh>Role</StyledTh>
-                  <StyledTh>Contact</StyledTh>
-                </StyledTr>
-                <StyledTr>
-                  <StyledTd>Rohit Krishnan</StyledTd>
-                  <StyledTd>Internship Mentor</StyledTd>
-                  <StyledTd>boardwalktech.com</StyledTd>
-                </StyledTr>
-                <StyledTr>
-                  <StyledTd>Olivia Clachar</StyledTd>
-                  <StyledTd>Boss</StyledTd>
-                  <StyledTd>oclachar@bu.edu</StyledTd>
-                </StyledTr>
-              </StyledTable>
+              <StyledH4>Boston University</StyledH4>
+              <StyledP>Boston, Massachusetts | January 2022 - May 2025</StyledP>
+              <StyledP><strong>BA in Computer Science</strong>; Minor in Business Administration & Management</StyledP>
+              <StyledP><strong>Dean’s List</strong></StyledP>
 
-              <StyledH4>Personal Contacts</StyledH4>
-              <StyledTable>
-                <StyledTr>
-                  <StyledTh>Name</StyledTh>
-                  <StyledTh>Relation</StyledTh>
-                  <StyledTh>Contact</StyledTh>
-                </StyledTr>
-                <StyledTr>
-                  <StyledTd>Prasad Joshi</StyledTd>
-                  <StyledTd>Father</StyledTd>
-                  <StyledTd>630-886-0830</StyledTd>
-                </StyledTr>
-                <StyledTr>
-                  <StyledTd>Mithila Joshi</StyledTd>
-                  <StyledTd>Mother</StyledTd>
-                  <StyledTd>630-956-2625</StyledTd>
-                </StyledTr>
-              </StyledTable>
-
+              <StyledH4>Principal Courses:</StyledH4>
+              <StyledP>Software Engineering, Database Systems, Information Security, Data Science Applications, Accounting,
+                Business Law, Analysis of Algorithms, Probability in Computing, Statistical Decision-Making for
+                Management,
+                Computer Systems, Microeconomics, Macroeconomics</StyledP>
             </StyledTextContents>
 
           </StyledContents>
         </StyledMain>
-
       </StyledContainer>
-
 
       <Footer />
     </StyledWrapper>
