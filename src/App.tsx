@@ -25,14 +25,12 @@ function Root() {
 }
 
 const router = createBrowserRouter(
-  [{ path: "*", Component: Root }]
+  [{ path: "*", Component: Root },]
 );
 
 
-function App() {
+export default function App() {
   return (
     <RouterProvider router={router} />
   );
 }
-
-export default App;
