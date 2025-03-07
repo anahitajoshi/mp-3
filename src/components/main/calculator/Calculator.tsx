@@ -1,40 +1,6 @@
 import { styled } from "styled-components";
 import { useState } from "react";
-
-
-const StyledMain = styled.main`
-  max-width: 70%;
-  min-width: 70%;
-  display: flex;
-  flex-direction: column;
-  background-color: rgb(170, 233, 247);
-  align-items: center;
-  overflow: hidden;
-
-  @media screen and (max-width: 750px) {
-    max-width: 100%;
-    min-height: auto;
-    overflow: hidden;
-    justify-content: center;
-  }
-`;
-
-const StyledH3 = styled.h3`
-  margin: 2vw 0;
-  text-align: center;
-  font-size: calc(4px + 4vw);
-  color: white;
-
-  @media screen and (max-width: 750px) {
-    color: white;
-    margin: 2vh 0;
-    font-size: calc(5px + 5vw);
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-top: 25px
-  }
-`;
+import { StyledMain, StyledH3, StyledContents, StyledTextContents } from "../../ui-components/StyledComponents";
 
 
 const StyledH4 = styled.h4`
@@ -42,37 +8,6 @@ const StyledH4 = styled.h4`
   text-align: center;
   font-size: calc(1.5px + 1.5vw);
   color: white;
-`;
-
-const StyledContents = styled.div`
-  max-width: 100%;
-  overflow: hidden;
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  padding: 2vh 2vw;
-
-  @media screen and (max-width: 750px) {
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    padding: 2vh 2vw;
-    height: 100vh;
-    justify-content: flex-start;
-  }
-`;
-
-const StyledTextContents = styled.div`
-  align-self: center;
-  max-width: 60%;
-  margin: 1vh 1vw;
-
-  @media screen and (max-width: 750px) {
-    align-self: center;
-    width: 60%;
-    margin: 1vh 1vw;
-  }
-
 `;
 
 // calculator styled components
