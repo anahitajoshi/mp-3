@@ -23,7 +23,6 @@ const StyledLink = styled(Link)`
 
   @media screen and (max-width: 750px) {
     text-decoration: none;
-    font-size: calc(2px + 1vw);
   }
 `;
 
